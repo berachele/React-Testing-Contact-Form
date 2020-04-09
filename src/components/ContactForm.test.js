@@ -20,7 +20,7 @@ test("Testing if inputs are visible", () => {
 })
 
 test("Testing if Submitting button renders information", () => {
-    act(() => {const {getByTestId} = render(<ContactForm />)
+    async () => {const {getByTestId} = render(<ContactForm />)
     // const {getByTestId} = render(<ContactForm/>)
 
     const firstNameInput = getByTestId(/first/i);
@@ -46,7 +46,7 @@ test("Testing if Submitting button renders information", () => {
     //assert that theres data listed--currently not working
     const showsData = await findByTestId(/data/i);
     expect(showsData).toBeInTheDocument();
-})
+}})
 
 // test("Testing you can fully type a person's name", () => {
 //     const {getByTestId} = render(<ContactForm/>);
