@@ -4,7 +4,7 @@ import ContactForm from "./components/ContactForm";
 
 export default function App() {
   return (
-    <div className="App">
+    <div data-testid = "App" className="App">
       <ContactForm />
     </div>
   );
